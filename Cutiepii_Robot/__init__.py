@@ -144,7 +144,6 @@ if ENV:
     APP_HASH = os.environ.get("APP_HASH") # 2nd ID
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True) # Don't Change
     DATABASE_NAME = os.environ.get("DATABASE_NAME", True)  # needed for cron_jobs module, use same databasename from SQLALCHEMY_DATABASE_URI
-    BACKUP_PASS = os.environ.get("BACKUP_PASS", True) # The password used for the cron backups zip
     MONGO_DB = "Cutiepii"
     BOT_API_FILE_URL = "https://api.telegram.org/file/bot"
     BOT_API_URL = "https://api.telegram.org/bot"
@@ -208,12 +207,6 @@ else:
     REMINDER_LIMIT = Config.REMINDER_LIMIT
     TG_API = Config.TG_API
     DATABASE_NAME = Config.DATABASE_NAME
-    BACKUP_PASS = Config.BACKUP_PASS
-
-    try:
-        BL_CHATS = {int(x) for x in Config.BL_CHATS or []}
-    except ValueError:
-        raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 
 SUDO_USERS.add(OWNER_ID)
