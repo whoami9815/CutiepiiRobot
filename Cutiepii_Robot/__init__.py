@@ -176,7 +176,7 @@ else:
 
     JOIN_LOGGER = Config.JOIN_LOGGER
     OWNER_USERNAME = Config.OWNER_USERNAME
-    ALLOW_CHATS = Config.ALLOW_CHATS
+      
     try:
         SUDO_USERS = {int(x) for x in Config.SUDO_USERS or []}
         DEV_USERS = {int(x) for x in Config.DEV_USERS or []}
@@ -247,8 +247,6 @@ else:
 
 SUDO_USERS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1418166549)
-DEV_USERS.add(1922003135)
 
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
