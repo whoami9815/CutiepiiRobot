@@ -176,12 +176,6 @@ else:
 
     JOIN_LOGGER = Config.JOIN_LOGGER
     OWNER_USERNAME = Config.OWNER_USERNAME
-      
-    try:
-        SUDO_USERS = {int(x) for x in Config.SUDO_USERS or []}
-        DEV_USERS = {int(x) for x in Config.DEV_USERS or []}
-    except ValueError:
-        raise Exception("Your sudo or dev users list does not contain valid integers.")
 
     try:
         SUPPORT_USERS = {int(x) for x in Config.SUPPORT_USERS or []}
