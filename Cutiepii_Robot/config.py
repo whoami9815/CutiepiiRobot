@@ -21,7 +21,6 @@ class Config(object):
     APP_HASH = "sss"
     TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1352499461 # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    SUDO_USERS = 324434334
     OWNER_USERNAME = "ihaveenoughhate"
     SUPPORT_CHAT = "foundingtitansupport"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
