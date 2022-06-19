@@ -36,6 +36,7 @@ class Config(object):
     DATABASE_URL = "MEOW.com"
     DONATION_LINK = "t.me/nekoarsh"
     MONGO_DB_URL = "KEK.COM"
+    MONGO_DB = "yehsalabekarbot.com"
     REDIS_URL = "meow2.com"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
