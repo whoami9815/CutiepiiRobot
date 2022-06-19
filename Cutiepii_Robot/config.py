@@ -31,6 +31,8 @@ class Config(object):
     GBAN_LOGS = ( -31212719 )
     ERROR_LOGS = ( -1929292 )
 
+    HELP_IMG = "MEOW.COM"
+    GROUP_START_IMG = "MEOW.COM"
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules # its "URI" and not "URL" as herok and similar ones only accept it as such
     DATABASE_URL = "MEOW.com"
