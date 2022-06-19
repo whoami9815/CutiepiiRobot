@@ -14,6 +14,7 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
+    REMINDER_LIMIT = 223323
     API_ID = 3898519 # integer value, dont use ""
     API_HASH = "awoo"
     APP_ID = 11112
