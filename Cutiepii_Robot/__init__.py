@@ -208,9 +208,6 @@ else:
     TG_API = Config.TG_API
     DATABASE_NAME = Config.DATABASE_NAME
 
-
-DEV_USERS.add(OWNER_ID)
-
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
 try:
