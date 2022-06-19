@@ -176,23 +176,6 @@ else:
 
     JOIN_LOGGER = Config.JOIN_LOGGER
     OWNER_USERNAME = Config.OWNER_USERNAME
-
-    try:
-        SUPPORT_USERS = {int(x) for x in Config.SUPPORT_USERS or []}
-    except ValueError:
-        raise Exception("Your support users list does not contain valid integers.")
-
-    try:
-        WHITELIST_USERS = {int(x) for x in Config.WHITELIST_USERS or []}
-    except ValueError:
-        raise Exception("Your whitelisted users list does not contain valid integers.")
-
-    try:
-        TIGER_USERS = {int(x) for x in Config.TIGER_USERS or []}
-    except ValueError:
-        raise Exception("Your tiger users list does not contain valid integers.")
-
-
     INFOPIC = Config.INFOPIC
     GBAN_LOGS = Config.GBAN_LOGS 
     ERROR_LOGS = Config.ERROR_LOGS
